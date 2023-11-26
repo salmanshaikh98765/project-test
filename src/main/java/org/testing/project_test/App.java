@@ -59,9 +59,9 @@ public class App
     //for saving the screenshots
     File srcFile = scrShot.getScreenshotAs(OutputType.FILE);
     //this dest is locally 
-    File destFile = new File("/Users/Dell/Documents/test-reports.jpg");
+   // File destFile = new File("/Users/Dell/Documents/test-reports.jpg");
     //this dest is in ubuntu jenkins server
-   // File destFile = new File("/home/ubuntu/test-reports.jpg");
+    File destFile = new File("/home/ubuntu/test-reports.jpg");
     FileUtils.copyFile(srcFile, destFile);
     Thread.sleep(1000);
     
