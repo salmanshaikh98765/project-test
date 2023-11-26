@@ -27,7 +27,7 @@ public class App
     //system properties
     ChromeOptions chromeOptions = new ChromeOptions();
     //to run in headless mode
-    //chromeOptions.addArguments("--headless");
+    chromeOptions.addArguments("--headless");
     // open url
     WebDriver driver = new ChromeDriver(chromeOptions);    	
     driver.get("http://43.204.97.176:8081/contact.html");
@@ -61,7 +61,7 @@ public class App
     //this dest is locally 
    // File destFile = new File("/Users/Dell/Documents/test-reports.jpg");
     //this dest is in ubuntu jenkins server
-    File destFile = new File("/home/ubuntu/test-reports.jpg");
+    File destFile = new File("//var/lib/jenkins/workspace/project-test/test-reports.jpg");
     FileUtils.copyFile(srcFile, destFile);
     Thread.sleep(1000);
     
