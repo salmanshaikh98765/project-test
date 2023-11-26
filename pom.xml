@@ -56,7 +56,7 @@
                    </descriptorRefs>
                    <archive>
                        <manifest>
-                           <mainClass>org.testing.project_test</mainClass>
+                           <mainClass>org.testing.project-test</mainClass>
                        </manifest>
                    </archive>
                </configuration>
